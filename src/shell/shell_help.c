@@ -30,6 +30,7 @@ SHELL_HELP( rm );
 SHELL_HELP( ls );
 SHELL_HELP( recv );
 SHELL_HELP( cat );
+SHELL_HELP( mem );
 SHELL_HELP( lua );
 SHELL_HELP( ver );
 SHELL_HELP( mkdir );
@@ -56,6 +57,8 @@ static const SHELL_HELP_DATA shell_help_data[] =
   SHELL_INFO_ALIAS( dir, ls ),
   SHELL_INFO( cat ),
   SHELL_INFO_ALIAS( type, cat ),
+  SHELL_INFO( mem ),
+  SHELL_INFO_ALIAS( md, mem ),
   SHELL_INFO( recv ),
   SHELL_INFO( cp ),
   // Yes, 'mv' is still special
