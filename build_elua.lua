@@ -15,6 +15,26 @@
        luarocks install luafilesystem
        luarocks install lpack
        luarocks install md5
+
+   mac:
+	sudo visudo
+	brew install lua
+	brew install luarocks
+	brew link lua
+	brew install luarocks
+	sudo luarocks install luafilesystem
+	sudo luarocks install lpack
+	sudo vim /usr/local/opt/lua/include/lauxlib.h
+
+		typedef struct luaL_Reg {
+		  const char *name;
+		  lua_CFunction func;
+		} luaL_Reg;
+
+		typedef luaL_Reg luaL_reg;
+
+	sudo luarocks install lpack
+	sudo luarocks install md5
 --]]
 
 local args = { ... }
